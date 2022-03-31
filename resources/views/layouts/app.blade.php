@@ -8,16 +8,35 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body class="bg-gray-200">
-    <nav class="p-6 bg-white flex justify-between mb-6">
+    <nav class="p-3 bg-white flex justify-between">
         <ul class="flex items-center">
             <li>
                 <a href="" class="p-3">Home</a>
             </li>
             <li>
-                <a href="" class="p-3">Dashboard</a>
+                <a href="" class="p-3">Videos</a>
             </li>
             <li>
-                <a href="" class="p-3">Posts</a>
+                <a href="" class="p-3">Setup</a>
+            </li>
+            <li>
+                <a href="" class="p-3">Info</a>
+            </li>
+            <li>
+                <a href="" class="p-3">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="p-3 bg-white flex justify-between mb-6">
+        <ul class="flex items-center">
+            <li>
+                <a href="" class="p-3">track1</a>
+            </li>
+            <li>
+                <a href="" class="p-3">track2</a>
+            </li>
+            <li>
+                <a href="" class="p-3">track3</a>
             </li>
         </ul>
     </nav>
