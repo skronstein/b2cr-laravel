@@ -25,6 +25,9 @@
             <li>
                 <a href="" class="p-3">Contact</a>
             </li>
+            <li>
+                <a href="{{ route('register') }}" class="p-3">Submit</a>
+            </li>
         </ul>
     </nav>
     <nav class="p-3 bg-white flex justify-between mb-6">
