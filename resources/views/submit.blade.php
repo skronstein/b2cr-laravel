@@ -3,6 +3,7 @@
 @section('content')
     <div class="flex justify-center">
         <div class="w-6/12 bg-white p-6 rounded-lg">
+            Submit a score
             <form action="{{ route('register') }}" method="post">
                 @csrf
                 <div class="mb-4">

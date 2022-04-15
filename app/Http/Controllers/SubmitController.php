@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-//need the following line?
 use App\Http\Controllers\Controller;
 
 class SubmitController extends Controller
