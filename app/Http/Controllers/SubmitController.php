@@ -12,15 +12,14 @@ class SubmitController extends Controller
         return view('submit');
     }
     public function store(Request $request){
-        //validate
         $this->validate($request, [
             'track' => 'required|min:1|max:15',
             'name' => 'required',
             'score' => 'required|min:1',
             //use date selector'date' => 'required',
-            'car' => 'required'
+            'car' => 'required',
             //emu
-            //proof
+            'proof' => 'required'
             //email
         ]);
 
