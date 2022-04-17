@@ -10,7 +10,11 @@ class LoginController extends Controller
     public function index(){
         return view('admin.login');
     }
-    public function login(){
-        return view('tracks');
+    public function loginAction(Request $request){
+        $this->validate($request, [
+            'userName' => 'required'
+        ]);
+        //signin here
+        return redirect()->route('dashboard');
     }
 }
