@@ -11,7 +11,7 @@
     <nav class="p-3 bg-white flex justify-between">
         <ul class="flex items-center">
             <li>
-                <a href="" class="p-3">Home</a>
+                <a href="/" class="p-3">Home</a>
             </li>
             <li>
                 <a href="" class="p-3">Videos</a>
