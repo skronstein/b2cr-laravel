@@ -1,12 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Country;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SubmitController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\admin\LoginController;
 
-Route::get('/',[HomeController::class, 'index'])->name('home');
+// Route::get('/',[HomeController::class, 'index'])->name('home');
+Route::get('/countries', function () {
+    return view('countries',[
+        'heading' => 'All Countries',
+        'countries' => Country::all() //get data using the Country model
+    ]);
+});
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
