@@ -33,13 +33,13 @@
     <nav class="p-3 bg-white flex justify-between mb-6">
         <ul class="flex items-center">
             <li>
-                <a href="" class="p-3">track1</a>
+                <a href="/tracks/1" class="p-3">track1</a>
             </li>
             <li>
-                <a href="" class="p-3">track2</a>
+                <a href="/tracks/2" class="p-3">track2</a>
             </li>
             <li>
-                <a href="" class="p-3">track3</a>
+                <a href="/tracks/3" class="p-3">track3</a>
             </li>
         </ul>
     </nav>
