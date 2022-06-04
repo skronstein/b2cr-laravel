@@ -1,12 +1,20 @@
 <?php
 
 use App\Models\Player;
+use App\Models\Record;
 use App\Models\Country;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SubmitController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\admin\LoginController;
+
+Route::get('/tracks/{track_id}/{category_name}', function () {
+    return view('tracks.single', [
+        'heading' => "track # todo",
+        'records' => Record::all()
+    ]);
+});
 
 // Route::get('/',[HomeController::class, 'index'])->name('home');
 Route::get('/countries', function () {
