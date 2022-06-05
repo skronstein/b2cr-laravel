@@ -18,6 +18,7 @@ use App\Http\Controllers\admin\LoginController;
 // });
 
 Route::get('/tracks/{track_id}/{category_name}', [RecordsController::class, 'single_category'])->name('single');
+Route::get('/tracks/{track_id}/', [RecordsController::class, 'all_categories'])->name('all');
 
 // Route::get('',[HomeController::class, 'index'])->name('home');
 Route::get('/countries', function () {
