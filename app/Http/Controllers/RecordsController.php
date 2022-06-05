@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Record;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class RecordsController extends Controller
 {
@@ -16,12 +17,15 @@ class RecordsController extends Controller
         ]);
     }
     //one category for track $id
-    public static function single_category($category_name, $id) {
+    public static function single_category($id, $category_name) {
+        $records = DB::table('records')
+            ->where('track_id', '=', $id)
+            ->where('category', '=', $category_name)
+            ->where('reverse', '=', false)
+            ->take(5)
+            ->orderBy('score')->get()->toArray();
         return view ('tracks.single', [
-            'records' => Record::all()
+            'records' => $records
         ]);
-        // return view ('tracks.single', [
-        //     'categories' => Record::category()->filter($id)->get()
-        // ]);
     }
 }

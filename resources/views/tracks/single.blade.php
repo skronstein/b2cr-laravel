@@ -6,7 +6,7 @@
             {{--$heading--}}<br>
             @foreach($records as $record)
                 {{--//show count(rank)--}}<br>
-                {{$record['score']}} {{$record['player_id']}}
+                {{$record->score}} {{$record->player_id}}
             @endforeach
         </div>
     </div>
