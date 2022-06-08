@@ -35,6 +35,10 @@ Route::get('/players', function () {
     ]);
 });
 
+Route::get('/', function () {
+    return view('home');
+});
+
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/submit', [SubmitController::class, 'index'])->name('register');
