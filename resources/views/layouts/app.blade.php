@@ -32,15 +32,11 @@
     </nav>
     <nav class="p-3 bg-white flex justify-between mb-6">
         <ul class="flex items-center">
-            <li>
-                <a href="/tracks/1" class="p-3">track1</a>
-            </li>
-            <li>
-                <a href="/tracks/2" class="p-3">track2</a>
-            </li>
-            <li>
-                <a href="/tracks/3" class="p-3">track3</a>
-            </li>
+            @for($itr = 1; $itr <=15 ; $itr++)
+                <li>
+                    <a href="/tracks/{{$itr}}" class="p-3"><img src="/images/tracks/{{$itr}}.png"></a>
+                </li>
+            @endfor
         </ul>
     </nav>
     @yield('content')
