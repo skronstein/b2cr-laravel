@@ -1,0 +1,172 @@
+body {
+    text-align: center;
+}
+.container {
+    width: 1170px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    margin: 10px auto 10px auto;
+}
+.container-home {
+    grid-template-rows: 500px 400px;
+    text-align: left;
+}
+.subcontainer {
+    font-size: 16px;
+}
+.subcontainer-tracks {
+    text-align: center;
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.trackinfo {
+    width: 1150px;
+    margin: 10px auto 10px auto;
+    display: flex;
+}
+.tracktext {
+    width: 880px;
+    text-align: center;
+    color: #686868;
+}
+.trackfilters {
+    width: 100%;
+    text-align: left;
+}
+.track-selector {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+@media (max-width: 1175px) {
+    body {
+    	font-size: 40px;
+    }
+    button {
+        font-size: 35px;
+    }
+	.track-selector-1 img {
+		width: 12.5%;
+	}
+	.track-selector-2 img {
+		width: 14.285%;
+		/* To make the sizes of the icons in the upper and lower rows equal
+		I had to use 12.5% * 8/7 or 14.285%
+		because the lower row is 7/8 the width of the upper row
+		due to only having 7 tracks insted of 8*/
+	}
+	.track-selector {
+		flex-direction: column;
+		width: 1200px;
+	}
+	.tracktext {
+		font-size: 40px;
+	}
+	td img {
+		width: 120px;
+	}
+}
+@media (min-width: 1176px) {
+    body {
+    	font-size: 26px;
+    }
+    button {
+        font-size: 20px;
+    }
+	.track-selector img {
+		width: 78px;
+	}
+	.track-selector {
+		flex-direction: row;
+	}
+}
+.filtergrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+}
+button {
+    width: 256px;
+    height: 100px;
+    margin: 14px 0 14px 0;
+}
+.external {
+    display: table;
+    position: relative;
+    height: 100%;
+    width: 95%;
+    margin-left: 10px;
+}
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+.internal {
+    margin-left: auto;
+    margin-right: auto;
+}
+.topbar{
+    display: flex;
+    width: 1170px;
+    margin: 10px auto 10px auto;
+}
+.topleft {
+    width: 150px;
+    font-size: 26px;
+}
+.topcenter {
+    width: 870px;
+}
+.topright {
+    width: 150px;
+}
+.text{
+   font-size: 20px;
+   text-align: left;
+   margin: 20px auto 10px auto;
+   width: 1170px;
+}
+tr{
+	transition: background-color .3s;
+}
+tr:hover{
+	background-color: #f6f6f6;
+}
+td img{
+	margin: 5px 0 5px 0;
+}
+table{
+	border-spacing: 0;
+}
+article{
+	font-size: 20px;
+	line-height: 1.6em;
+	padding: 5px;
+	transition: background-color .3s;
+	border-radius: 10px;
+}
+article:hover{
+	background-color: #f6f6f6;
+}
+p{
+	color: #979797;
+}
+article > p{
+	height: 120px;
+}
+.width-240 {
+	width: 240px;
+}
+.article-text {
+	text-align: left;
+	width: 750px;
+	padding-left: 20px
+}
+hr {
+	padding: 20px;
+}
