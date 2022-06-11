@@ -24,6 +24,9 @@ table {
     margin-top: 10px;
     margin-bottom: 100px;
 }
+article > table {
+	margin-bottom: 10px;
+}
 .trackinfo {
     width: 1150px;
     margin: 10px auto 10px auto;
