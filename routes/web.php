@@ -38,6 +38,15 @@ Route::get('/players', function () {
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/setup', function () {
+    return view('setup');
+});
+Route::get('/info', function () {
+    return view('info');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
@@ -50,3 +59,4 @@ Route::post('/admin', [LoginController::class, 'loginAction']);
 Route::get('/tracks', function () {
     return view('tracks.index');
 });
+

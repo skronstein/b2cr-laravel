@@ -16,16 +16,16 @@
                 <a href="/" class="p-3">Home</a>
             </li>
             <li>
-                <a href="" class="p-3">Videos</a>
+                <a href="https://www.youtube.com/playlist?list=PLZRlKCDJDJ95yqddkgT-okO-9LD7enMSu" class="p-3">Videos</a>
             </li>
             <li>
-                <a href="" class="p-3">Setup</a>
+                <a href="setup" class="p-3">Setup</a>
             </li>
             <li>
-                <a href="" class="p-3">Info</a>
+                <a href="info" class="p-3">Info</a>
             </li>
             <li>
-                <a href="" class="p-3">Contact</a>
+                <a href="contact" class="p-3">Contact</a>
             </li>
             <li>
                 <a href="{{ route('register') }}" class="p-3">Submit</a>

@@ -8,7 +8,7 @@
             Click on a track icon above to view records for that track.
             <hr>
             <section id="services" class="clear">
-                <a href="">
+                <a href="setup">
                     <article>
                         <table>
                             <td class="iconcell">
@@ -22,7 +22,7 @@
                         </table>
                     </article>
                 </a>
-                <a href="">
+                <a href="info">
                     <article>
                         <table>
                             <td class="iconcell">
@@ -36,7 +36,7 @@
                         </table>
                     </article>
                 </a>
-                <a href="">
+                <a href="contact">
                     <article>
                         <table>
                             <td class="iconcell">

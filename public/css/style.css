@@ -1,5 +1,5 @@
 body {
-    text-align: center;
+    text-align: left;
 }
 .container {
     width: 1170px;
@@ -169,4 +169,8 @@ article > p{
 }
 hr {
 	padding: 20px;
+}
+h1 {
+	text-align: left;
+	padding-top: 20px;
 }
