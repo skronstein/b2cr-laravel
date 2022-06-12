@@ -20,16 +20,17 @@ class RecordsController extends Controller
     //all categories for this track
     public static function all_categories($id) {
         $categories = [
-            'best_laps',
-            'total_times',
-            'big_crashes',
-            'race_crash_totals',
-            'big_airs',
-            'most_cars_in_crashes'
+            ['db_name' => 'best_laps',            'display_name' => 'Best Lap'],
+            ['db_name' => 'total_times',          'display_name'  => 'Total Race Time'],
+            ['db_name' => 'big_crashes',          'display_name'  => 'Big Crash'],
+            ['db_name' => 'race_crash_totals',    'display_name'  => 'Race Crash Total'],
+            ['db_name' => 'big_airs',             'display_name' => 'Big Air'],
+            ['db_name' => 'most_cars_in_crashes', 'display_name'  => 'Most Cars In Crash']
         ];
         foreach($categories as $category){
-            $records[$category] = [
-                'category_name' => $category,
+            $records[$category['db_name']] = [
+                'db_name'      => $category['db_name'],
+                'display_name' => $category['display_name'],
                 'records' => self::get_records($id, $category, 3)
             ];
         }

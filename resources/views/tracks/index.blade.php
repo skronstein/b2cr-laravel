@@ -6,7 +6,7 @@
             {{-- {{$heading}}<br> --}}
             @foreach($categories as $category)
                 {{-- @php dd($category); @endphp --}}
-                <b>{{$category['category_name']}}</b>
+                <b>{{$category['display_name']}}</b>
                 <br>
                 @foreach($category['records'] as $record)
                     {{$loop->iteration}} {{$record->score}} {{$record->player_id}}
