@@ -7,12 +7,21 @@
             @foreach($categories as $category)
                 {{-- @php dd($category); @endphp --}}
                 <b>{{$category['display_name']}}</b>
-                <br>
-                @foreach($category['records'] as $record)
-                    {{$loop->iteration}} {{$record->score}} {{$record->player_id}}
-                    {{$record->car}} {{$record->date_acheived}} {{$record->system}} {{$record->proof}}
+                <table>
                     <br>
-                @endforeach
+                    @foreach($category['records'] as $record)
+                        <tr>
+                            <td><img src="/images/medals/{{$loop->iteration}}.png" alt=""></td>
+                            <td>{{$record->score}}</td>
+                            <td>{{$record->player_id}}</td>
+                            <td>{{$record->date_acheived}}</td>
+                            <td><img src="/images/cars/{{$record->car}}.png" alt=""></td>
+                            <td>{{$record->system}}</td>
+                            <td><a href="{{$record->proof}}"><img src="/images/youtube2.png" alt=""></a></td>
+                        </tr>    
+                        <br>
+                    @endforeach
+                </table>
                 <br><br>
             @endforeach
         </div>
