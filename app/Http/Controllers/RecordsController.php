@@ -27,7 +27,25 @@ class RecordsController extends Controller
             ['db_name' => 'big_airs',             'display_name' => 'Big Air'],
             ['db_name' => 'most_cars_in_crashes', 'display_name'  => 'Most Cars In Crash']
         ];
+        $nameArray = [
+            'Airport Terminal 3',
+            'Airport Terminal 1&2',
+            'Interstate Loop',
+            '88 Interchange',
+            'Palm Bay Heights',
+            'Palm Bay Marina',
+            'Sunrise Valley Downtown',
+            'Sunrise Valley Springs',
+            'Big Surf Grove',
+            'Big Surf Shores',
+            'Crystal Summit Peak',
+            'Crystal Summit Lake',
+            'Ocean Sprint',
+            'Heartbreak Hills',
+            'Freeway Dash'
+        ];
         foreach($categories as $category){
+            // dd($id);
             $records[$category['db_name']] = [
                 'db_name'      => $category['db_name'],
                 'display_name' => $category['display_name'],
@@ -35,7 +53,9 @@ class RecordsController extends Controller
             ];
         }
         return view ('tracks.index', [
-            'categories' => $records
+            'categories' => $records,
+            'track_id'     => $id,
+            'track_name'   => $nameArray[$id-1]
         ]);
     }
     //one category for this track

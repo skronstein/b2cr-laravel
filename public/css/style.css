@@ -28,7 +28,7 @@ article > table {
 	margin-bottom: 10px;
 }
 .trackinfo {
-    width: 1150px;
+    width: 100%;
     margin: 10px auto 10px auto;
     display: flex;
 }
@@ -179,4 +179,8 @@ h1 {
 }
 .img-cell {
     width: 76px;
+}
+.trackinfo-img {
+    width: 200px;
+    margin: 10px auto 10px auto;
 }
